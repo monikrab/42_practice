@@ -1,6 +1,4 @@
 
-#include <stdio.h>
-
 char*		ft_strncpy(char* dest, char* src, unsigned int n)
 {
 	static int i, j;
@@ -18,13 +16,14 @@ char*		ft_strncpy(char* dest, char* src, unsigned int n)
 	return dest;
 }
 
-/**/
+/*
 int main()
 {
 	char s1[] = "hello";
-	char s2[6]; 
+	char s2[] = "byeby world!"; 
 
-	ft_strncpy(s2, s1, 4);
+	ft_strncpy(s2, s1, 5);
 
 	printf("%s", s2);
 }
+*/
