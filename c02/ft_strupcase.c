@@ -1,5 +1,5 @@
 
-char*		ft_strupcase(char *str)
+char*		ft_strupcase(char* str)
 {
 	int i = 0;
 	while (1)

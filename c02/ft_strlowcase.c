@@ -1,4 +1,5 @@
-char*		ft_strlowcase(char *str)
+
+char*		ft_strlowcase(char* str)
 {
 	int i = 0;
 	while (1)

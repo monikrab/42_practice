@@ -1,8 +1,8 @@
 
-int        ft_strcmp(char* s1, char* s2)
+int        ft_strncmp(char* s1, char* s2, unsigned int n)
 {
   int i = 0;
-  while (s1[i] != '\0')
+  while (s1[i] != '\0' && i < n)
   {
     if (s1[i] == s2[i]) i++;
 
@@ -17,14 +17,13 @@ int        ft_strcmp(char* s1, char* s2)
   return 0;
 }
 
-/*
-int main()
+
+/* int main()
 {
   char s1[] = "hello, world";
-  char s2[] = "hello, corld";
+  char s2[] = "hello, xorld";
 
-  printf("%d", ft_strcmp(s1, s2));
+  printf("%d", ft_strncmp(s1, s2, 8));
 
   return 0;
-}
-*/
+} */
