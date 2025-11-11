@@ -5,20 +5,27 @@ char*		ft_strstr(char* str, char* to_find)
 
 	while (str[i] != to_find[j]) i++;
 
-	while (str[i] != '\0')
+	
+	while (1)
 	{
-		to_find[j] = str[i];
-		j++; i++;
+		if (str[i] == to_find[j])
+		{
+			if (str[i] != '\0')
+			{
+				to_find[j] = str[i];
+			}
+			j++; i++;
+		}
+		else return to_find;
 	}
-
 	return to_find;
 }
 
 
 /* int main()
 {
-	char s1[] = "Donald John Trump";
-	char s2[11] = "John";
+	char s1[] = "Madonna Madowwa";
+	char s2[30] = "dowwa";
 
 	printf("%s", ft_strstr(s1, s2));
 } */
